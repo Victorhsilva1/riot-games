@@ -1,36 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>RIOT GAMES</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yasuo - RIOT GAMES </title>
+    <meta name="" content="" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <div class="relative w-full h-screen bg-[url('./img/background.png')] bg-cover bg-center">
+<body class="text-white">
+    <header class="bg-black bg-opacity-50 fixed w-full z-50 mt-4 ">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
 
-    <!-- Gradiente por cima -->
-    <div class="absolute inset-0 bg-[url('./img/gradiente.png')] bg-cover bg-center z-10"></div>
+            <div class="flex items-center space-x-2">
+                <img src="img/Logo.png" alt="Logo da Riot Games" class="w-18 h-18" />
 
-    <!-- Yasou por cima do gradiente -->
-    <div class="absolute inset-0 bg-[url('./img/yasou.png')] bg-cover bg-center z-20"></div>
+            </div>
 
-    <!-- Texto e botão acima de tudo -->
-    <div class="relative z-30 p-6">
-      <p class="text-white font-semibold mb-4">— "Death is like the wind—always by my side."</p>
+            <nav class="hidden md:flex space-x-8 " role="navigation">
+                <a href="#" class="hover:text-gray-400 transition-colors">HOME</a>
+                <a href="#" class="hover:text-gray-400 transition-colors">STORE</a>
+                <a href="#" class="hover:text-gray-400 transition-colors">CHAMPION</a>
+                <a href="#" class="hover:text-gray-400 transition-colors">ABOUT</a>
+                <a href="#" class="hover:text-gray-400 transition-colors">BLOG</a>
+            </nav>
 
-      <div class="flex">
-        <button class="relative">
-          <img src="./img/button.png" alt="Button image" class="block">
-          <p class="absolute top-4 left-1/2 -translate-x-1/2 text-black font-semibold text-sm tracking-wide">
-            DETAILS
-          </p>
-        </button>
-      </div>
-    </div>
-  </div>
+            <div class="flex items-center space-x-4">
+                <button class="w-56 h-7 bg-gray-700 rounded " aria-label="Pesquisar"> <img src="img/lupa.png" alt="" class=""></button>
+                <div class="relative">
+                    <div class="w-15 h-15 " aria-label="Carrinho de compras">
+                        <img src="img/Shop.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative min-h-screen flex items-center justify-center">
+
+        <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('img/background.png')"></div>
+        <div class="absolute inset-0 bg-cover bg-center opacity-80 z-10"
+            style="background-image: url('img/gradiente.png')"></div>
+        <img src="img/yasou.png" alt="Personagem Yasuo"
+            class="absolute inset-0 w-full h-full object-contain max-h-screen z-40 mx-auto" />
+
+        <div class="absolute inset-0 bg-black bg-opacity-40 z-30"></div>
+
+        <div class="relative z-30 w-full h-full flex items-center justify-center">
+            <div class="relative w-full h-full max-w-7xl  ">
+
+                <div class="absolute top-1/2 left-0 -translate-y-1/2 space-y-4 ">
+                    <h1 class="text-4xl md:text-6xl font-bold italic mt-9">THE UNFORGIVEN</h1>
+                    <div class="text-8xl md:text-9xl font-bold leading-none ml-6">
+                        <div>ヤ</div>
+                        <div>ス</div>
+                        <div>オ</div>
+                    </div>
+
+                </div>
+                <h2
+                    class="absolute bottom-24 right-0 -translate-y-1/2 text-6xl md:text-9xl font-bold italic mb-7 mr-6 ">
+                    YASUO
+                </h2>
+                <div class="absolute top-30 right-0 space-y-6 text-right">
+                    <div class="">
+                        <div class="w-14 h-20 mb-2 ml-auto flex items-center justify-center">
+                            <img src="img/lutador.png" alt="Ícone de Lutador" class="w-22 h-17" />
+                        </div>
+                        <div class="text-xl ">Role</div>
+                        <div class="text-xs text-gray-400">Fighter</div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-end mb-2">
+                            <img src="img/dificuldade.png" alt="Ícone de Dificuldade Alta" class="h-5" />
+                        </div>
+                        <div class="text-xl">Difficulty</div>
+                        <div class="text-xs text-gray-400">High</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="absolute z-50 left-[47%] top-[85%] transform ">
+                    <button class="bg-blue-500 hover:bg-blue-600 px-12 py-4 rounded-lg font-semibold">
+                        DETAILS
+                    </button>
+                </div>
+    </main>
 </body>
-
 </html>
