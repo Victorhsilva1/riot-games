@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>RIOT GAMES</title>
+</head>
+
+<body>
+  <div class="relative w-full h-screen bg-[url('./img/background.png')] bg-cover bg-center">
+
+    <!-- Gradiente por cima -->
+    <div class="absolute inset-0 bg-[url('./img/gradiente.png')] bg-cover bg-center z-10"></div>
+
+    <!-- Yasou por cima do gradiente -->
+    <div class="absolute inset-0 bg-[url('./img/yasou.png')] bg-cover bg-center z-20"></div>
+
+    <!-- Texto e botão acima de tudo -->
+    <div class="relative z-30 p-6">
+      <p class="text-white font-semibold mb-4">— "Death is like the wind—always by my side."</p>
+
+      <div class="flex">
+        <button class="relative">
+          <img src="./img/button.png" alt="Button image" class="block">
+          <p class="absolute top-4 left-1/2 -translate-x-1/2 text-black font-semibold text-sm tracking-wide">
+            DETAILS
+          </p>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
