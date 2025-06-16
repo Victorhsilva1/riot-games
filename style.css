@@ -11,7 +11,8 @@
         display: none;
     }
 
-    .roles {
+   
+    .yasuoTitleDesk {
         display: none;
     }
 
@@ -22,10 +23,17 @@
     .japones {
         display: none;
     }
+
+    .subtitle {
+        display: none;
+    }
 }
 /* Estilos para desktop (mantém o comportamento original) */
 @media (min-width: 940px) {
    .btnMobile {
+    display: none;
+   }
+   .yasuoTitleMobile {
     display: none;
    }
 }
