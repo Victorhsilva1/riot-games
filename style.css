@@ -27,6 +27,10 @@
     .subtitle {
         display: none;
     }
+
+    .rolesDesk {
+        display: none;
+    }
 }
 /* Estilos para desktop (mantém o comportamento original) */
 @media (min-width: 940px) {
@@ -34,6 +38,10 @@
     display: none;
    }
    .yasuoTitleMobile {
+    display: none;
+   }
+
+   .rolesMbl {
     display: none;
    }
 }
