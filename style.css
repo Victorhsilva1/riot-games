@@ -1,0 +1,32 @@
+@media (max-width: 639px) {
+   .pesquisa {
+        display: none;
+    }
+
+    .navdesk {
+        display: none;
+    }
+
+    .btnDesk {
+        display: none;
+    }
+
+    .roles {
+        display: none;
+    }
+
+    .yasuo {
+        display: none;
+    }
+
+    .japones {
+        display: none;
+    }
+}
+/* Estilos para desktop (mantém o comportamento original) */
+@media (min-width: 940px) {
+   .btnMobile {
+    display: none;
+   }
+}
+

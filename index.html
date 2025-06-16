@@ -7,18 +7,18 @@
     <title>Yasuo - RIOT GAMES </title>
     <meta name="" content="" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="text-white">
     <header class="bg-black bg-opacity-50 fixed w-full z-50 mt-4 ">
-        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="container mx-auto px-7 py-4 flex items-center justify-between">
 
             <div class="flex items-center space-x-2">
                 <img src="img/Logo.png" alt="Logo da Riot Games" class="w-18 h-18" />
-
             </div>
 
-            <nav class="hidden md:flex space-x-8 " role="navigation">
+            <nav class="hidden md:flex space-x-8 navdesk " role="navigation">
                 <a href="#" class="hover:text-gray-400 transition-colors">HOME</a>
                 <a href="#" class="hover:text-gray-400 transition-colors">STORE</a>
                 <a href="#" class="hover:text-gray-400 transition-colors">CHAMPION</a>
@@ -26,10 +26,10 @@
                 <a href="#" class="hover:text-gray-400 transition-colors">BLOG</a>
             </nav>
 
-            <div class="flex items-center space-x-4">
-                <button class="w-56 h-7 bg-gray-700 rounded " aria-label="Pesquisar"> <img src="img/lupa.png" alt="" class=""></button>
+            <div class="flex items-center space-x-4   ">
+                <button class="w-56 h-7 bg-gray-700 rounded pesquisa " aria-label="Pesquisar"> <img src="img/lupa.png" alt="" class=""></button>
                 <div class="relative">
-                    <div class="w-15 h-15 " aria-label="Carrinho de compras">
+                    <div class="w-15 h-15 shop " aria-label="Carrinho de compras">
                         <img src="img/Shop.png" alt="">
                     </div>
                 </div>
@@ -43,7 +43,7 @@
         <div class="absolute inset-0 bg-cover bg-center opacity-80 z-10"
             style="background-image: url('img/gradiente.png')"></div>
         <img src="img/yasou.png" alt="Personagem Yasuo"
-            class="absolute inset-0 w-full h-full object-contain max-h-screen z-40 mx-auto" />
+            class="absolute inset-0 w-full h-full object-contain max-h-screen z-40 mx-auto yasuo" />
 
         <div class="absolute inset-0 bg-black bg-opacity-40 z-30"></div>
 
@@ -52,7 +52,7 @@
 
                 <div class="absolute top-1/2 left-0 -translate-y-1/2 space-y-4 ">
                     <h1 class="text-4xl md:text-6xl font-bold italic mt-9">THE UNFORGIVEN</h1>
-                    <div class="text-8xl md:text-9xl font-bold leading-none ml-6">
+                    <div class="text-8xl md:text-9xl font-bold leading-none ml-6 japones">
                         <div>ヤ</div>
                         <div>ス</div>
                         <div>オ</div>
@@ -60,10 +60,10 @@
 
                 </div>
                 <h2
-                    class="absolute bottom-24 right-0 -translate-y-1/2 text-6xl md:text-9xl font-bold italic mb-7 mr-6 ">
+                    class="absolute bottom-24 right-0 -translate-y-1/2 text-6xl md:text-9xl font-bold italic mb-7 mr-6 yasuoTitle ">
                     YASUO
                 </h2>
-                <div class="absolute top-30 right-0 space-y-6 text-right">
+                <div class="absolute top-30 right-0 space-y-6 text-right roles">
                     <div class="">
                         <div class="w-14 h-20 mb-2 ml-auto flex items-center justify-center">
                             <img src="img/lutador.png" alt="Ícone de Lutador" class="w-22 h-17" />
@@ -83,7 +83,12 @@
             </div>
         </div>
          <div class="absolute z-50 left-[47%] top-[85%] transform ">
-                    <button class="bg-blue-500 hover:bg-blue-600 px-12 py-4 rounded-lg font-semibold">
+                    <button class="bg-blue-500 hover:bg-blue-600 px-12 py-4 rounded-lg font-semibold btnDesk">
+                        DETAILS
+                    </button>
+                </div>
+                 <div class="absolute z-50 left-[30%] top-[87%] transform ">
+                    <button class="bg-blue-500 hover:bg-blue-600 px-12 py-4 rounded-lg font-semibold btnMobile">
                         DETAILS
                     </button>
                 </div>
